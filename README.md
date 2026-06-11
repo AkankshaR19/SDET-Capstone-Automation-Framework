@@ -164,6 +164,25 @@ All tests can be executed together using the TestNG suite file.
 
 ---
 
+## Jenkins CI/CD Integration
+
+The framework is integrated with Jenkins using a Pipeline Job.
+
+The Jenkins pipeline performs the following actions:
+
+1. Pulls the latest source code from GitHub.
+2. Executes the Maven TestNG test suite.
+3. Runs all automation scenarios automatically.
+4. Displays build execution results and status.
+
+Pipeline Outcome:
+
+* Automated Test Execution
+* Continuous Integration Support
+* Build Success/Failure Tracking
+* Integration with GitHub Repository
+
+
 ## Author
 
 Akanksha Rath
