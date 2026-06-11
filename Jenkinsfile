@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/AkankshaR19/SDET-Capstone-Automation-Framework.git'
-            }
-        }
-
         stage('Build and Test') {
             steps {
                 bat 'mvn clean test'
