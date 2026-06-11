@@ -1,21 +1,18 @@
 pipeline {
-agent any
+    agent any
 
-```
-stages {
+    stages {
 
-    stage('Checkout') {
-        steps {
-            git 'https://github.com/AkankshaR19/SDET-Capstone-Automation-Framework.git'
+        stage('Checkout') {
+            steps {
+                git 'https://github.com/AkankshaR19/SDET-Capstone-Automation-Framework.git'
+            }
+        }
+
+        stage('Build and Test') {
+            steps {
+                bat 'mvn clean test'
+            }
         }
     }
-
-    stage('Build & Test') {
-        steps {
-            bat 'mvn clean test'
-        }
-    }
-}
-```
-
 }
